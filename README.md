@@ -83,7 +83,7 @@ The original dataset consisted of **23 source tables** with different levels of 
 
 ### 🖼️ Original Data Model
 
-![Data Model Before Transformation](<img width="469" height="235" alt="Screenshot 2026-09-26 164110" src="https://github.com/user-attachments/assets/48f11bed-d62a-4515-9a5c-ffd3065117b8" />
+[!Data Model Before Transformation](<img width="469" height="235" alt="Screenshot 2026-09-26 164110" src="https://github.com/user-attachments/assets/48f11bed-d62a-4515-9a5c-ffd3065117b8" />
 )
 
 
@@ -105,7 +105,7 @@ The source tables were reorganized into a structured dimensional model consistin
 
 ### 🖼️ Final Data Model
 
-![Data Model After Transformation](<img width="421" height="248" alt="Screenshot 2026-09-26 171149" src="https://github.com/user-attachments/assets/69c78107-55f9-4664-9296-104c2a60e104" />
+[!Data Model After Transformation](<img width="421" height="248" alt="Screenshot 2026-09-26 171149" src="https://github.com/user-attachments/assets/69c78107-55f9-4664-9296-104c2a60e104" />
 )
 
 
