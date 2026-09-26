@@ -53,23 +53,6 @@ This portfolio project focuses on transforming a **chaotic, nightmare dataset co
 ## 📐 Data Model Schema
 
 
-
-
-# 🎯 Project Objectives
-
-The main objectives of this project were:
-
-1. Re-architect the source data into a clean **Star Schema**
-2. Identify and standardize **table grain**
-3. Create reusable **Fact and Dimension tables**
-4. Clean and transform data using **Power Query**
-5. Optimize relationships and filter directions
-6. Create business-focused **DAX measures**
-7. Validate data integrity before and after modeling
-8. Implement **Dynamic Row-Level Security (RLS)**
-
----
-
 # 📂 Project Files
 
 | File | Description |
@@ -100,10 +83,9 @@ The original dataset consisted of **23 source tables** with different levels of 
 
 ### 🖼️ Original Data Model
 
-![Data Model Before Transformation](./images/data_model_before.png)
+![Data Model Before Transformation](<img width="469" height="235" alt="Screenshot 2026-09-26 164110" src="https://github.com/user-attachments/assets/48f11bed-d62a-4515-9a5c-ffd3065117b8" />
+)
 
-> 📌 **Add your original model screenshot here:**
-> `images/data_model_before.png`
 
 ### Challenges in the Original Model
 
@@ -123,10 +105,9 @@ The source tables were reorganized into a structured dimensional model consistin
 
 ### 🖼️ Final Data Model
 
-![Data Model After Transformation](C:\Users\ADMIN\OneDrive\Pictures\Screenshots.png)
+![Data Model After Transformation](<img width="421" height="248" alt="Screenshot 2026-09-26 171149" src="https://github.com/user-attachments/assets/69c78107-55f9-4664-9296-104c2a60e104" />
+)
 
-> 📌 **Add your final model screenshot here:**
-> `images/data_model_after.png`
 
 ### Improvements
 
