@@ -61,27 +61,18 @@ This portfolio project focuses on transforming a **chaotic, nightmare dataset co
 | 📁 [Dataset](./dataset.xlsx) | Original source dataset containing the 23 tables |
 | 📝 [README](./README.md) | Project documentation |
 
-### 📊 Power BI File
-
-[**⬇️ Download Power BI `.pbix` File**](./data_modelling_project.pbix)
-
-### 📁 Dataset
-
-[**⬇️ Download Source Dataset**](./dataset.xlsx)
-
----
 
 # 🔍 Data Modeling: Before vs After
 
-One of the primary objectives of this project was to transform the original unorganized data structure into a clean and optimized **Star Schema**.
+One of the primary objectives of this project was to transform the original unorganized data structure into a clean and optimized Star Schema.
 
 ---
 
-## ❌ Before — Original Data Model
+## Original Data Model
 
 The original dataset consisted of **23 source tables** with different levels of granularity, overlapping information and complex relationships.
 
-### 🖼️ Original Data Model
+### Original Data Model
 
 <img width="421" height="248" alt="Screenshot 2026-09-26 171149" src="https://github.com/user-attachments/assets/aeadf287-8f7d-422d-b4fe-f1f7169bf86b" />
 
@@ -100,7 +91,7 @@ The original dataset consisted of **23 source tables** with different levels of 
 
 ---
 
-# ✅ After — Optimized Star Schema
+## After — Optimized Star Schema
 
 The source tables were reorganized into a structured dimensional model consisting of **Fact Tables** connected to reusable **Dimension Tables**.
 
