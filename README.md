@@ -51,3 +51,112 @@ This portfolio project focuses on transforming a **chaotic, nightmare dataset co
 ---
 
 ## 📐 Data Model Schema
+
+
+
+
+# 🎯 Project Objectives
+
+The main objectives of this project were:
+
+1. Re-architect the source data into a clean **Star Schema**
+2. Identify and standardize **table grain**
+3. Create reusable **Fact and Dimension tables**
+4. Clean and transform data using **Power Query**
+5. Optimize relationships and filter directions
+6. Create business-focused **DAX measures**
+7. Validate data integrity before and after modeling
+8. Implement **Dynamic Row-Level Security (RLS)**
+
+---
+
+# 📂 Project Files
+
+| File | Description |
+|---|---|
+| 📊 [Power BI Data Model](./data_modelling_project.pbix) | Complete Power BI model, transformations, relationships and DAX |
+| 📁 [Dataset](./dataset.xlsx) | Original source dataset containing the 23 tables |
+| 📝 [README](./README.md) | Project documentation |
+
+### 📊 Power BI File
+
+[**⬇️ Download Power BI `.pbix` File**](./data_modelling_project.pbix)
+
+### 📁 Dataset
+
+[**⬇️ Download Source Dataset**](./dataset.xlsx)
+
+---
+
+# 🔍 Data Modeling: Before vs After
+
+One of the primary objectives of this project was to transform the original unorganized data structure into a clean and optimized **Star Schema**.
+
+---
+
+## ❌ Before — Original Data Model
+
+The original dataset consisted of **23 source tables** with different levels of granularity, overlapping information and complex relationships.
+
+### 🖼️ Original Data Model
+
+![Data Model Before Transformation](./images/data_model_before.png)
+
+> 📌 **Add your original model screenshot here:**
+> `images/data_model_before.png`
+
+### Challenges in the Original Model
+
+- 23 source tables
+- Different levels of data granularity
+- Multiple transactional and lookup tables
+- Redundant information
+- Complex relationships
+- Difficult-to-maintain structure
+- Potential aggregation and filtering issues
+
+---
+
+# ✅ After — Optimized Star Schema
+
+The source tables were reorganized into a structured dimensional model consisting of **Fact Tables** connected to reusable **Dimension Tables**.
+
+### 🖼️ Final Data Model
+
+![Data Model After Transformation](C:\Users\ADMIN\OneDrive\Pictures\Screenshots.png)
+
+> 📌 **Add your final model screenshot here:**
+> `images/data_model_after.png`
+
+### Improvements
+
+- Clear Fact and Dimension separation
+- Standardized table grain
+- Consistent naming conventions
+- One-to-many relationships
+- Single-direction filtering
+- Reduced redundancy
+- Improved scalability
+- Easier DAX development
+- Better reporting performance and maintainability
+
+---
+
+# 🏗️ Data Architecture
+
+The final model follows a **Star Schema** architecture.
+
+```text
+                    ┌─────────────────┐
+                    │   dim_customer  │
+                    └────────┬────────┘
+                             │
+                             │
+┌──────────────┐      ┌──────▼───────┐      ┌──────────────┐
+│  dim_product │──────│  FACT TABLE  │──────│   dim_date   │
+└──────────────┘      └──────┬───────┘      └──────────────┘
+                             │
+                             │
+                    ┌────────▼────────┐
+                    │ Supporting Dims │
+                    └─────────────────┘
